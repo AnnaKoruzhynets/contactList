@@ -1,22 +1,22 @@
-import { useDispatch} from 'react-redux';
-import  {setFilter}  from '../../redux/contactsSlice';
+import { useDispatch } from 'react-redux';
+import { setFilter } from '../../redux/contactsSlice';
 import './Filter.css';
 
 export const Filter = () => {
-  const dispatch = useDispatch();
+	const dispatch = useDispatch();
 
-  const change = e => {
-    dispatch(setFilter(e.target.value));
-  };
+	const handleChange = e => {
+		dispatch(setFilter(e.target.value));
+	};
 
-  return (
-    <div className='filter'>
-      <input 
-      type="text"
-      onChange={change}
-      placeholder='Фільтр'
-      className='filterInp'
-      />
-    </div>
-  );
+	return (
+		<div className='filter-container'>
+			<input
+				type='text'
+				onChange={handleChange}
+				placeholder='Фільтр контактів'
+				className='inputFilter'
+			/>
+		</div>
+	);
 };
