@@ -1,19 +1,19 @@
-.contactList{
-    margin-top: 20px;
+.contacts-list {
+	margin-top: 20px;
 }
 
-.contactList ul {
+.contacts-list h2 {
+	color: #424242;
+	margin-bottom: 15px;
+}
+
+.contacts-list ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.contactList h2 {
-	color: #424242;
-	margin-bottom: 15px;
-}
-
-.contactItem {
+.contact-item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -25,11 +25,27 @@
 	transition: transform 0.2s;
 }
 
-.contactItem:hover {
+.contact-item:hover {
 	transform: translateY(-2px);
 }
 
-.deletebtn {
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.contact-name {
+	font-weight: bold;
+	color: #424242;
+}
+
+.contact-number {
+	color: #616161;
+	font-size: 14px;
+}
+
+.delete-button {
 	padding: 6px 12px;
 	background-color: #9e9e9e;
 	color: white;
@@ -40,23 +56,7 @@
 	transition: background-color 0.3s;
 }
 
-.deletebtn:hover {
+.delete-button:hover {
 	background-color: #757575;
-}
-
-.info {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-}
-
-.contactName {
-	font-weight: bold;
-	color: #424242;
-}
-
-.contactNumber {
-	color: #616161;
-	font-size: 14px;
 }
 
